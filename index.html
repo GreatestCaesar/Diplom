@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Расписание</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+        <link rel="shortcut icon" href="images/site/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="wrapper">
+            <header class="header">
+                <a draggable="false" href="http://bsac.by" class="logo">
+                    <img class="img-logo" src="images/site/logo.png" alt="Белорусская государственная академия связи">
+                </a>
+                <div class="head">
+                    <div class="head-list">
+                        <div class="head-list-item">
+                            <a draggable="false" href="http://bsac.by" class="name-site">
+                                Белорусская государственная академия связи
+                            </a>
+                        </div>
+                        <div class="head-list-item">
+                            <div class="number-weekend">
+                                <p>2 учебная неделя</p>
+                            </div>
+                            <div class="date">
+                                <p>11.01.2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER -->
+
+
+            <!-- MAIN -->
+            <main class="main">
+                <div class="menu-displays">
+                    <label class="menu-displays-radio">
+                        <input checked type="radio" class="radio" name="radio-displays">
+                        <span class="radio-displays-text">Расписание занятий для преподавателей</span>
+                    </label>
+                    <label class="menu-displays-radio">
+                        <input type="radio" class="radio" name="radio-displays">
+                        <span class="radio-displays-text">Расписание занятий для студентов</span>
+                    </label>
+                </div>
+                <div class="main-content">
+                    <div class="selection-panel">
+                        <!-- Панель для преподавателя -->
+                        <div class="teacher-content">
+                            <div class="block-find-teacher">
+                                <div class="find-selects">
+                                    <label class="find-teacher-fields">
+                                        <span class="find-hint">Преподаватель</span>
+                                        <input type="text" class="find-teacher" list="teacher_list">
+                                        <datalist id="teacher_list">
+                                            <option>Рябычина Ольга Петровна</option>
+                                            <option>Рыбак Виктор Александрович</option>
+                                            <option>Боженков Владимир Владимирович</option>
+                                            <option>Новиков Василий Алексеевич</option>
+                                            <option>Балаш Алла Николаевна</option>
+                                            <option>Куль Татьяна Петровна</option>
+                                            <option>Рябычина Ольга Петровна</option>
+                                            <option>Рыбак Виктор Александрович</option>
+                                            <option>Боженков Владимир Владимирович</option>
+                                            <option>Новиков Василий Алексеевич</option>
+                                            <option>Балаш Алла Николаевна</option>
+                                            <option>Куль Татьяна Петровна</option>
+                                            <option>Рябычина Ольга Петровна</option>
+                                            <option>Рыбак Виктор Александрович</option>
+                                            <option>Боженков Владимир Владимирович</option>
+                                            <option>Новиков Василий Алексеевич</option>
+                                            <option>Балаш Алла Николаевна</option>
+                                            <option>Куль Татьяна Петровна</option>
+                                            <option>Рябычина Ольга Петровна</option>
+                                            <option>Рыбак Виктор Александрович</option>
+                                            <option>Боженков Владимир Владимирович</option>
+                                            <option>Новиков Василий Алексеевич</option>
+                                            <option>Балаш Алла Николаевна</option>
+                                            <option>Куль Татьяна Петровна</option>
+                                            <option>Рябычина Ольга Петровна</option>
+                                            <option>Рыбак Виктор Александрович</option>
+                                            <option>Боженков Владимир Владимирович</option>
+                                            <option>Новиков Василий Алексеевич</option>
+                                            <option>Балаш Алла Николаевна</option>
+                                            <option>Куль Татьяна Петровна</option>
+                                        </datalist>
+                                        <button type="button" class="button-find-teacher"></button>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-info-teacher">
+                                <div class="description-teacher">
+                                    <img class="img-teacher" src="images/teachers/riab-250x250.jpg" alt="Рябычина Ольга Петровна">
+                                    <span class="FIO-teacher">рябычина ольга петровна</span>
+                                    <span class="degree-teacher">Cтарший преподаватель</span>
+                                    <span class="description-teacher-time-lessons">Период занятий: 01.09.2021 - 31.07.2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END панели для преподавателя -->
+
+                        <!-- Панель для студента -->
+                        <div class="student-content">
+                            <div class="block-find-student">
+                                <div class="find-selects">
+                                    <label class="find-student-fields">
+                                        <span class="find-hint">Группа</span>
+                                        <input type="text" class="find-student" list="student_list">
+                                        <datalist id="student_list">
+                                            <option>СО 942</option>
+                                            <option>СО 941</option>
+                                            <option>СТ 941</option>
+                                            <option>СП 941</option>
+                                        </datalist>
+                                        <button type="button" class="button-find-student"></button>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-info-student">
+                                <div class="content-block-info-student">
+                                    <span class="block-info-name-group">СО041</span>
+                                    <div class="duration-of-semester">
+                                        <div class="period-of-classes">
+                                            <span>Начало занятий: 01.09.2021</span>
+                                            <span>Конец занятий: 30.07.2022</span>
+                                        </div>
+                                        <div class="session-period">
+                                            <span>  Начало сессии: 27.12.2021</span>
+                                            <span>Конец сессии: 13.01.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END панели для студента -->
+                    </div>
+
+                    <div class="block-lessons">
+                        <div class="menu-lesson">
+                            <label class="menu-lesson-radio">
+                                <input checked type="radio" class="radio" name="radio-lesson">
+                                <span class="radio-lesson-text">Занятия</span>
+                            </label>
+                            <label class="menu-lesson-radio">
+                                <input type="radio" class="radio" name="radio-lesson">
+                                <span class="radio-lesson-text">Сессия</span>
+                            </label>
+                        </div>
+                        <div class="content-for-lessons">
+                            <div class="filters">
+                                <div class="filter-of-the-week">
+                                    <span>Неделя:</span>
+                                    <div class="list-weeks">
+                                        <label class="item-week">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">1</span>
+                                        </label>
+                                        <label class="item-week">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">2</span>
+                                        </label>
+                                        <label class="item-week">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">3</span>
+                                        </label>
+                                        <label class="item-week">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">4</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="subgroup-filter">
+                                    <span>Подгруппы:</span>
+                                    <div class="list-of-subgroups">
+                                        <label class="item-subgroup">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">1</span>
+                                        </label>
+                                        <label class="item-subgroup">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="text-week-check">2</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lessons-two-day">
+                                <!-- Сегодня -->
+                                <div class="block-lesson-item">
+                                    <div class="block-lesson-item-header">
+                                        <span>Сегодня</span>
+                                        <span>31.11.2021</span>
+                                        <span>-</span>
+                                        <span>Понедельник</span>
+                                    </div>
+                                    <div class="block-lesson-item-content">
+                                        <div class="block-class-time">
+                                            <span class="time-item">12:15</span>
+                                            <span class="time-item">13:00</span>
+                                        </div>
+                                        <div class="block-week-lesson">
+                                            <span class="week-lesson-item">1</span>
+                                            <span class="week-lesson-item">2</span>
+                                        </div>
+                                        <span class="block-lesson-name">КПиЯП</span>
+                                        <span class="block-lesson-type">ЛК</span>
+                                        <div class="block-lesson-name-group-list">
+                                            <span class="name-group-item">СО941</span>
+                                        </div>
+                                        <span class="block-lesson-auditorium">а.222</span>
+                                    </div>
+                                    <hr/>
+                                    <div class="block-lesson-item-content">
+                                        <div class="block-class-time">
+                                            <span class="time-item">08:00</span>
+                                            <span class="time-item">09:55</span>
+                                        </div>
+                                        <div class="block-week-lesson">
+                                            <span class="week-lesson-item">1</span>
+                                            <span class="week-lesson-item">3</span>
+                                        </div>
+                                        <span class="block-lesson-name">КПиЯП</span>
+                                        <span class="block-lesson-type">ЛК</span>
+                                        <div class="block-lesson-name-group-list">
+                                            <span class="name-group-item">СО941</span>
+                                            <span class="name-group-item">СО942</span>
+                                        </div>
+                                        <span class="block-lesson-auditorium">а.222</span>
+                                    </div>
+                                    <hr/>
+                                    <div class="block-lesson-item-content">
+                                        <div class="block-class-time">
+                                            <span class="time-item">08:00</span>
+                                            <span class="time-item">09:55</span>
+                                        </div>
+                                        <div class="block-week-lesson">
+                                            <span class="week-lesson-item">1</span>
+                                            <span class="week-lesson-item">3</span>
+                                        </div>
+                                        <span class="block-lesson-name">КПиЯП</span>
+                                        <span class="block-lesson-type">ЛК</span>
+                                        <div class="block-lesson-name-group-list">
+                                            <span class="name-group-item">СО941</span>
+                                            <span class="name-group-item">СО942</span>
+                                        </div>
+                                        <span class="block-lesson-auditorium">а.222</span>
+                                    </div>
+                                </div>
+                                <!-- End Сегодня -->
+
+                                <!-- Завтра -->
+                                <div class="block-lesson-item">
+                                    <div class="block-lesson-item-header">
+                                        <span>Завтра</span>
+                                        <span>01.12.2021</span>
+                                        <span>-</span>
+                                        <span>Вторник</span>
+                                    </div>
+                                    <div class="block-lesson-item-content">
+                                        <div class="block-class-time">
+                                            <span class="time-item">08:00</span>
+                                            <span class="time-item">09:55</span>
+                                        </div>
+                                        <div class="block-week-lesson">
+                                            <span class="week-lesson-item">1</span>
+                                            <span class="week-lesson-item">3</span>
+                                        </div>
+                                        <span class="block-lesson-name">КПиЯП</span>
+                                        <span class="block-lesson-type">ЛК</span>
+                                        <div class="block-lesson-name-group-list">
+                                            <span class="name-group-item">СО941</span>
+                                        </div>
+                                        <span class="block-lesson-auditorium">а.222</span>
+                                    </div>
+                                </div>
+                                <!-- End Завтра -->
+                            </div>
+                            <hr class="second-hr">
+                        </div>
+                        <div class="lessons-all-week">
+                            <!-- Понедельник -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Понедельник</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                        <span class="name-group-item">СП941</span>
+                                        <span class="name-group-item">СТ941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Понедельник -->
+
+                            <!-- Вторник -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Вторник</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                        <span class="name-group-item">СП941</span>
+                                        <span class="name-group-item">СТ941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Вторник -->
+
+                            <!-- Среда -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Среда</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                        <span class="name-group-item">СП941</span>
+                                        <span class="name-group-item">СТ941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Среда -->
+
+                            <!-- Четверг -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Четверг</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                        <span class="name-group-item">СП941</span>
+                                        <span class="name-group-item">СТ941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Четверг -->
+
+                            <!-- Пятница -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Пятница</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                        <span class="name-group-item">СП941</span>
+                                        <span class="name-group-item">СТ941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Пятница -->
+
+                            <!-- Суббота -->
+                            <div class="block-lesson-item">
+                                <div class="block-lesson-item-header">
+                                    <span>Суббота</span>
+                                </div>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">2</span>
+                                        <span class="week-lesson-item">3</span>
+                                        <span class="week-lesson-item">4</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                                <hr/>
+                                <div class="block-lesson-item-content">
+                                    <div class="block-class-time">
+                                        <span class="time-item">08:00</span>
+                                        <span class="time-item">09:55</span>
+                                    </div>
+                                    <div class="block-week-lesson">
+                                        <span class="week-lesson-item">1</span>
+                                        <span class="week-lesson-item">3</span>
+                                    </div>
+                                    <span class="block-lesson-name">КПиЯП</span>
+                                    <span class="block-lesson-type">ЛК</span>
+                                    <div class="block-lesson-name-group-list">
+                                        <span class="name-group-item">СО941</span>
+                                        <span class="name-group-item">СО942</span>
+                                    </div>
+                                    <span class="block-lesson-auditorium">а.222</span>
+                                </div>
+                            </div>
+                            <!-- End Суббота -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- END MAIN -->
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <span class="text-footer">Created by:<br>Гисич Юлиан, Лагун Алеся, Рябычина Ольга Петровна<br>© 2021-2022 Белорусская
+                    государственная академия связи</span>
+
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

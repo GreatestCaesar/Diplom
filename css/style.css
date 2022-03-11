@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    color: #000000;
+    user-select: none;
+    min-width: 100%;
+    overflow: hidden;
+    transition: 1s width;
+}
+
+.header{
+    display: flex;
+    background: #00bfff;
+    min-height: 66px;
+    width: 100%;
+}
+
+img{
+    pointer-events: none;
+}
+
+.logo{
+    display: block;
+    margin-left: 2.66%;
+    width: 3.5%;
+    min-height: 64px;
+    transition: 1s;
+}
+
+.img-logo{
+    height: 64px;
+    width: 100%;
+}
+
+.img-logo::after{
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.head{
+    width: 93.8%;
+}
+
+.head-list{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.head-list-item{
+    font-size: 14px;
+}
+
+.head-list-item:nth-child(1){
+    line-height: 1.25;
+    padding-top: 0.85%;
+    width: 24%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.head-list-item:nth-child(2){
+    display: inline-block;
+    padding: 0.85% 0.57% 0.57% 0.57%;
+    margin-left: 15.29%;
+    text-align: center;
+    width: 15%;
+}
+
+.name-site:hover, .number-weekend:hover, .date:hover{
+    color: #ffffff;
+}
+
+.number-weekend{
+    font-size: 16px;
+}
+
+.date{
+    display: inline-block;
+    margin-top: 3.77%;
+    font-size: 14px;
+}
+
+.main{
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.main-content{
+    width: 100%;
+}
+
+.menu-displays{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.27%;
+    width: 100%;
+}
+
+.menu-displays-radio{
+    width: 37%;
+    min-height: 48px;
+    padding-top: 2.13%;
+    cursor: pointer;
+}
+
+.menu-displays-radio:nth-child(1){
+    margin-left: 5.85%;
+}
+
+.menu-displays-radio:nth-child(2){
+    margin-left: 2.66%;
+}
+
+.radio-displays-text{
+    font-size: 18px;
+}
+
+.radio:checked ~ .radio-displays-text{
+    color: #00bfff;
+}
+
+.radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.selection-panel{
+    position: relative;
+}
+
+.teacher-content{ /* Вставил для студента 11.01 */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    min-height: 335px;
+    transition: 1.5s;
+}
+
+.student-content{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    top: 0;
+    left: 2000px;
+    width: 100%;
+    min-height: 335px;
+    transition: 1.5s;
+}
+
+/*  05.02 вставил для разделения блока find у препода и студента (было без -teacher) */
+.block-find-teacher, .block-info-teacher, .block-find-student, .block-info-student{ /* Вставил для студента 11.01 */
+    padding-top: 0.80%;
+    width: 41%;
+    min-height: 320px;
+}
+
+/*  05.02 вставил для разделения блока find у препода и студента (было без -teacher) */
+.block-info-teacher, .block-info-student{ /* Вставил для студента 11.01 */
+    position: absolute;
+    left: 55%;
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+    transition: 2.5s opacity, 2.5s visibility;
+}
+
+.block-info-student{
+    left: 53%;
+}
+
+/*  05.02 вставил для разделения блока find у препода и студента (было без -teacher) */
+.block-find-teacher, .block-find-student{ /* Вставил для студента 11.01 */
+    margin-left: 3.72%;
+    transition: 1.5s;
+    white-space: nowrap; /* Вставил для студента 11.01 */
+}
+
+.content-block-info-student{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.54%;
+}
+
+.block-info-name-group{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.duration-of-semester{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.61%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.period-of-classes, .session-period{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.find-selects{
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    min-height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.find-teacher-fields, .find-student-fields{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.find-hint{
+    margin-bottom: 4.36%;
+    margin-left: 4.36%;
+    font-size: 16.5px;
+}
+
+.find-teacher, .find-student{
+    display: block;
+    box-sizing: border-box;
+
+    padding-left: 3.92%;
+    padding-right: 3.92%;
+    margin-top: 2.93%;
+    width: 100%;
+    min-height: 50px;
+
+    border-radius: 150px 150px 150px 150px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+
+    background-color: #DCDCDC;
+
+    outline-style: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.button-find-teacher, .button-find-student{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 10%;
+    min-height: 50px;
+    border: none;
+    font-size: 18px;
+    background: black;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: 0.5s font-size;
+}
+
+.button-find-teacher:before, .button-find-student:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #ffffff;
+}
+
+.description-teacher{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img-teacher{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 120% 120% 120% 120%;
+}
+
+.img-teacher:after{
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+.FIO-teacher, .degree-teacher, .lessons{
+    margin-top: 2.62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FIO-teacher{
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+
+.degree-teacher{
+    font-size: 16px;
+}
+
+.description-teacher-time-lessons{
+    margin-top: 1.30%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.menu-lesson{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    min-height: 48px;
+    width: 81%;
+}
+
+.menu-lesson-radio:first-child{
+    min-height: 34px;
+    padding-top: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.menu-lesson-radio:last-child{
+    min-height: 34px;
+    padding-top: 1%;
+    margin-left: 1.66%;
+    cursor: pointer;
+}
+
+.mlr-chk{
+    border-bottom: 2px solid #00bfff;
+}
+
+.radio:checked ~ .radio-lesson-text{
+    color: #00bfff;
+}
+
+.content-for-lessons{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s opacity, 0.5s visibility;
+    width: 100%;
+}
+
+.filters{
+    display: flex;
+    margin-top: 2.39%;
+    width: 100%;
+}
+
+.filter-of-the-week{
+    margin-left: 11%;
+}
+
+.list-weeks{
+    display: flex;
+    margin-top: 6.70%;
+}
+
+.list-of-subgroups{
+    display: flex;
+    margin-top: 9.375%;
+}
+
+.item-week:nth-child(n+2), .item-subgroup:nth-child(n+2){
+    margin-left: 10px;
+}
+
+.text-week-check::before{
+    margin-right: 10px;
+    content: "";
+    display: inline-block;
+
+    transition: 0.4s;
+
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid lightgray;
+    border-radius: 3px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+
+.text-week-check:hover::before{
+    border-color: #00bfff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 191, 255, 0.25);
+}
+
+.checkbox:checked ~ .text-week-check::before{
+    background-image: url("../images/site/icons8.svg");
+}
+
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.subgroup-filter{
+    margin-left: 0.80%;
+    padding-left: 1.33%;
+    border-left: 1px solid lightgray;
+}
+
+.lessons-two-day{
+    margin-top: 1.60%;
+}
+
+.lessons-two-day, .lessons-all-week{
+    display: flex;
+    margin-left: 9.84%;
+    padding: 1.064%;
+    flex-wrap: wrap;
+}
+
+.lessons-two-day .block-lesson-item{
+    margin-bottom: 1.86%;
+}
+
+.lessons-all-week{
+    margin-top: 1.60%;
+}
+
+.block-lesson-item{
+    font-size: 14px;
+    /* background: rgba(0, 191, 255); **/
+    display: inline-block;
+    background: #e6e6e6;
+    border-radius: 15px 15px 15px 15px;
+    /*width: 41.17%;*/
+    height: 100%;
+}
+
+.block-lesson-item-header{
+    padding: 15px;
+    background: deepskyblue;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.block-lesson-item-content{
+    display: flex;
+    padding: 15px 25px 15px 25px;
+}
+
+.block-class-time{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+.time-item:last-child{
+    margin-top: 8.74%;
+}
+
+.block-week-lesson{
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    width: 45px;
+    min-height: 45px;
+    align-content: flex-start;
+}
+
+.week-lesson-item{
+    margin-left: 14.25%;
+}
+
+.week-lesson-item:nth-child(n+3){
+    margin-top: 10%;
+}
+
+.block-lesson-name{
+    margin-left: 35px;
+    /*width: 12.4%;*/
+}
+
+.block-lesson-type{
+    margin-left: 35px;
+    /*width: 4.65%;*/
+    width: 32px;
+}
+
+.block-lesson-name-group-list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /*width: 12.4%;*/
+    width: 80px;
+}
+
+.block-lesson-auditorium{
+    margin-left: 35px;
+    /*width: 12.4%;*/
+    width: 70px;
+}
+
+.name-group-item:nth-child(n+2){
+    margin-top: 8.74%;
+}
+
+.lessons-two-day .block-lesson-item:nth-child(1){
+    margin-right: 80px;
+}
+
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+    width: 93.65%;
+    background-color: #ffffff;
+    height: 2px;
+}
+
+.lessons-all-week{
+    width: 87.34%;
+}
+
+.lessons-all-week .block-lesson-item:nth-child(2n+1){
+    margin-right: 80px;
+}
+
+.lessons-all-week .block-lesson-item:nth-child(n+1){
+    margin-bottom: 2.76%;
+}
+
+.second-hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+    width: 91.5%;
+    background-color: lightgray;
+    height: 2px;
+}
+
+.footer{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 0.80%;
+    padding-bottom: 0.80%;
+
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background: black;
+
+    line-height: 1.5;
+    transition: 1.5s;
+}
+
+.text-footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-lessons{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 3.5s opacity, 3.5s visibility;
+}
+
